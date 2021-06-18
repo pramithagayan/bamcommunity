@@ -1,0 +1,31 @@
+{
+    "name": "BAM Theme by BCM",
+    "about_url": "",
+    "liscense_url": "",
+    "assets": {
+      "mnst-regular":"assets/Montserrat-Regular.ttf",
+      "mnst-italic":"assets/Montserrat-Italic.ttf",
+      "mnst-light":"assets/Montserrat-Light.ttf",
+      "mnst-light-italic":"assets/Montserrat-LightItalic.ttf",
+      "mnst-semibold":"assets/Montserrat-SemiBold.ttf",
+      "mnst-semibold-italic":"assets/Montserrat-SemiBoldItalic.ttf",
+      "mnst-bold":"assets/Montserrat-Bold.ttf",
+      "mnst-bold-italic":"assets/Montserrat-BoldItalic.ttf",
+      "mnst-black":"assets/Montserrat-Black.ttf",
+      "mnst-black-italic":"assets/Montserrat-BlackItalic.ttf"
+    },
+    "color_schemes": {
+      "BCM": {
+        "primary": "f2f2f2",
+        "secondary": "282a36",
+        "tertiary": "00eaff",
+        "quaternary": "8be9fd",
+        "header_background": "ffffff",
+        "header_primary": "14151f",
+        "highlight": "f1fa8c",
+        "danger": "ff5555",
+        "success": "50fa7b",
+        "love": "ff79c6"
+      }
+  }
+}

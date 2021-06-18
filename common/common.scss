@@ -1,0 +1,329 @@
+@import "fonts";
+
+@keyframes background-fade-highlight {
+  0% {
+    background-color: $love#{30}; //new color!
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+a {
+  color: $quaternary;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  &.text-size-smaller {
+    font-size: 16px;
+  }
+  &.text-size-larger {
+    font-size: 18px;
+  }
+  &.text-size-largest {
+    font-size: 20px;
+  }
+}
+
+tbody {
+  border-top: 3px solid #44475a;
+  tr.topic-list-item {
+    border-bottom: 1px solid #44475a;
+    background-color: #282a36;
+  }
+}
+
+.alert.alert-info {
+  background-color: $secondary-very-high;
+  border: 1px solid $love#{50};
+  a {
+    color: $quaternary;
+    font-family: 'Montserrat';
+    font-size: 13px;
+    &:hover {
+      color: $quaternary#{90};
+    }
+  }
+}
+
+.topic-list td {
+  color: $primary;
+}
+
+// Header
+.d-header {
+  background-color: $secondary;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,.15);
+  height: 75px;
+}
+
+// Menu Panel Links
+.panel-body-contents {
+  a {
+    color: $primary;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    &:hover {
+      color: $tertiary;
+      text-decoration-color: $tertiary;
+    }
+  }
+  .badge-wrapper.bullet span.badge-category {
+    color: $primary;
+    font-weight: 400;
+  }
+}
+
+// User menu panel links + icons
+.user-menu {
+  .menu-links-header {
+    .menu-links-row {
+      border-color: #44475a;
+      li a.active {
+        border-color: #44475a;
+      }
+    }
+    a {
+      color: $primary;
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      &:hover {
+      color: $tertiary;
+      text-decoration-color: $tertiary;
+      background-color: transparent;
+      }
+    }
+    .user .d-icon, .glyphs .d-icon {
+      color: $primary;
+    }
+  }
+}
+
+.user-menu .quick-access-panel li {
+  .d-icon {
+    color: $primary;
+  };
+  background-color: $tertiary#{50};
+  &:not(.read):hover {
+    background-color: $tertiary#{50};
+  }
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.quick-access-panel:hover {
+  .d-icon {
+    color: $primary !important;
+  }
+}
+
+// menu panel hover
+.menu-panel li a.widget-link:hover,
+.menu-panel li a.widget-link:focus,
+.menu-panel li.heading a.widget-link:hover,
+.menu-panel li.heading a.widget-link:focus {
+  background-color: transparent;
+}
+
+// select kit highlight
+.select-kit .select-kit-row.is-highlighted {
+  background-color: $highlight-high#{50};
+}
+
+// notifications
+.d-header .unread-notifications {
+  background-color: $success;
+}
+.unread-private-messages {
+  background-color: $love;
+}
+
+// Last visit line + text
+.topic-list .topic-list-item-separator td {
+  border-bottom: 1px solid $highlight-high#{90};
+  span {
+    color: $highlight-high;
+  }
+}
+
+// title when injected on top of topics
+.extra-info-wrapper {
+  .topic-link {
+    color: $primary;
+  }
+  .categories-wrapper .badge-wrapper .badge-category {
+    color: $primary#{90} !important;
+  }
+}
+
+// visited topics
+.topic-list-item.visited a.title:not(.badge-notification),
+.latest-topic-list-item.visited a.title:not(.badge-notification),
+.category-topic-link.visited a.title:not(.badge-notification) {
+  color: $primary-high;
+  font-weight: 400;
+}
+
+// not visited topics
+tr:not(.visited) .link-top-line .title {
+  color: $primary;
+  font-weight: 600;
+}
+
+td .link-bottom-line .badge-category {
+  font-weight: 400;
+}
+
+// Navigation Pills
+.nav-pills:not(#global-sidebar-nav) > li > a {
+  color: $primary;
+  font-family: "Montserrat" sans-serif;
+  border-radius: 4px;
+  &.active {
+    background-color: $tertiary;
+    color: $secondary;
+    font-weight: 600;
+  }
+  &:hover {
+    background-color: $tertiary;
+    color: $secondary;
+  }
+}
+
+// create topic
+button#create-topic {
+  background-color: $success;
+  color: $secondary;
+  border-radius: 4px;
+  .d-icon {
+    color: $secondary;
+  }
+  &:hover {
+    background-color: $success-medium;
+  }
+}
+
+// header icons 
+.d-header-icons {
+  .icon:hover {
+    background-color: $primary#{20};
+    border-radius: 4px;
+  }
+  .d-icon {
+    color: $primary;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.d-header #site-logo {
+    height: 3.667em;
+}
+
+.d-header-icons .icon:hover .d-icon, .d-header-icons .icon:focus .d-icon {
+  color: $primary;
+}
+
+// category box color
+.category-boxes .category-box-inner, .category-boxes-with-topics .category-box-inner {
+  border: 1px solid #44475a;
+}
+
+// input focus
+input[type="text"]:focus, input[type="password"]:focus,
+input[type="datetime"]:focus, input[type="datetime-local"]:focus,
+input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus,
+input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus,
+input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus,
+input[type="color"]:focus, textarea:focus {
+  box-shadow: none;
+}
+
+// select kit collection
+.select-kit-row .category-name, .select-kit-row .name {
+  color: $primary;
+  font-weight: 400;
+}
+.select-kit-row.is-highlighted[title="no tags"] span.name {
+  color: $tertiary;
+  font-weight: 600;
+}
+
+// post notice 
+.post-notice {
+  background-color: $secondary-high#{50};
+  border: 1px solid $love#{50};
+}
+
+// user name on posts
+.topic-meta-data {
+  .names .username a {
+    color: $success;
+  }
+}
+
+// custom side bar styles
+.custom-nav-list {
+  li:hover, h3 a:hover{
+    background-color: $tertiary#{50} !important;
+  }
+}
+
+#global-sidebar-nav > li > a:hover {
+  background-color: transparent;
+}
+
+.custom-nav-list h3 {
+  border-color: #44475a;
+}
+
+// avatar white background
+.avatar {
+  background-color: $primary;
+}
+
+.unread {
+  background-color: $success;
+}
+
+// topic progress
+.timeline-container .topic-timeline .timeline-scrollarea {
+  border-color: rgba($love,.9);
+  .timeline-handle {
+    background-color: rgba($love,.9);
+  }
+}
+
+#topic-progress {
+  color: rgba($love,.9);
+  background-color: $secondary;
+  border-color: rgba($love,.5);
+  .bg {
+    background-color: rgba($love,.4);
+    border-color: rgba($love,.5);
+  }
+}
+
+// select kit is selected
+.select-kit .select-kit-row.is-selected, .select-kit .select-kit-row.is-selected.is-highlighted {
+  background-color: $tertiary#{70} !important;
+}
+.select-kit .select-kit-row.is-highlighted {
+  background-color: $tertiary#{40} !important;
+} 
+
+// composer popup
+.composer-popup {
+  background: rgb(77,69,104);
+}
+
+.alert.alert-info {
+    display: none;
+}
+.avatar {
+    background-color: #131313;
+}
