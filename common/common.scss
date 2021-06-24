@@ -379,6 +379,9 @@ input[type="color"]:focus, textarea:focus {
       .category-name {
         margin-top: 1.25em;
         white-space: normal;
+        text-transform: uppercase;
+        font-size: 18px;
+        width: 90%;
       }
 
 			h3 {
