@@ -350,7 +350,7 @@ input[type="color"]:focus, textarea:focus {
 		tr {
       display: inline-block;
       width: 32%;
-      height: 250px;
+      height: 150px;
       margin: 2px;
       border: 1px solid rgba(0,0,0,0.1) !important;
       border-left-color: transparent;
@@ -377,7 +377,7 @@ input[type="color"]:focus, textarea:focus {
 			}
 
       .category-name {
-        margin-top: 1.25em;
+        margin-top: 0;
         white-space: normal;
         text-transform: uppercase;
         font-size: 18px;
