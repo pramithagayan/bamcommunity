@@ -338,7 +338,11 @@ input[type="color"]:focus, textarea:focus {
 	.subcategories,
 	.category-description {
 		display: none;
-	}
+  }
+  
+  .category-text-title {
+    justify-content: center;
+  }
 
 	tbody {
 		text-align: center;
@@ -371,9 +375,10 @@ input[type="color"]:focus, textarea:focus {
 				margin: 0 auto;
 			}
 
-			.category-name {
-				margin-top: 1.25em;
-			}
+      .category-name {
+        margin-top: 1.25em;
+        white-space: normal;
+      }
 
 			h3 {
 				position: absolute;
