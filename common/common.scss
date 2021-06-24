@@ -348,12 +348,12 @@ input[type="color"]:focus, textarea:focus {
 		text-align: center;
 
 		tr {
-			display: inline-block;
-			width: 250px;
-			height: 250px;
-			margin: 0.75em;
-			border: 1px solid rgba(0, 0, 0, 0.1) !important;
-			border-left-color: transparent;
+      display: inline-block;
+      width: 32%;
+      height: 250px;
+      margin: 2px;
+      border: 1px solid rgba(0,0,0,0.1) !important;
+      border-left-color: transparent;
 
 		}
 
@@ -363,7 +363,8 @@ input[type="color"]:focus, textarea:focus {
 			display: block;
 			width: 100%;
 			height: 100%;
-			position: relative;
+      position: relative;
+      background: #464852;
 
 			> div {
 				height: 100%;
