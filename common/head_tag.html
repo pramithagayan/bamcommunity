@@ -64,5 +64,9 @@ jQuery(document).ready(function(){
             $("#myMenu").removeClass("d-none");
         }
     });
+
+    jQuery('#myMenu li a').on('click', function(e) {
+        jQuery('#menuBtn').trigger('click');
+    });
 });
 </script>
