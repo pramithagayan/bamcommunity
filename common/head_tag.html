@@ -52,7 +52,10 @@ function(err, data) {
     }
 });
 
-jQuery('#menuBtn').on('click', function() {
-    alert('test');
+jQuery(document).ready(function(){
+    jQuery('#menuBtn').on('click', function(e) {
+        e.preventDefault();
+        alert('test');
+    });
 });
 </script>
