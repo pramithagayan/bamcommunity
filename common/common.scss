@@ -377,18 +377,17 @@ a#menuBtn {
   padding-top: 0;
 }
 .vote-count-wrapper {
-  border: 1px solid #ffffff;
+  border: 1px solid #ffffff!important;
 }
 .voting-category.list-container {
-  max-width: calc(100% - 20px);
+  max-width: calc(100% - 20px)!important;
 }
 .title-voting {
-  padding-top: 0;
-  position: relative;
+  padding-top: 0!important;
 }
 .voting-category.list-container .topic-list-item:not(.non-voting) .vote-count-before-title {
-  border: 1px solid #ffffff;
+  border: 1px solid #ffffff!important;
 }
 .voting-category.list-container .topic-list-item:not(.non-voting) .vote-count-before-title .svg-icon {
-  color: #ffffff;
+  color: #ffffff!important;
 }
