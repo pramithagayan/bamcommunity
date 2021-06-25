@@ -341,7 +341,7 @@ ul#myMenu li {
 }
 ul#myMenu {
   list-style: none;
-  margin: 0 0 30px;
+  margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -358,4 +358,19 @@ li.other-trending-stocks, li.bam-forecasting-services {
 }
 .d-none {
   display: none!important;
+}
+a#menuBtn {
+  padding: 20px;
+  display: block;
+  background: #ff9800;
+  margin: 1px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+.list-controls {
+  margin-top: 40px;
 }
