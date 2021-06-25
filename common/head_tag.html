@@ -23,7 +23,6 @@ function(err, data) {
         for (let index = 0; index < data.categories.length; ++index) {
             
             if(data.categories[index].parent_category_id === undefined) {
-                console.log(data.categories[index].parent_category_id);
                 var a = document.createElement("a");
                 var ulist = document.getElementById("myMenu");
                 var newItem = document.createElement("li");
@@ -32,6 +31,19 @@ function(err, data) {
                 a.setAttribute('href', "/c/" + data.categories[index].id);
                 newItem.appendChild(a);
                 ulist.appendChild(newItem);
+
+                var subcats = data.categories.filter(item => item.parent_category_id == data.categories[index].parent_category_id);
+
+                for (let indexi = 0; indexi < subcats.length; ++indexi) {
+                    var a = document.createElement("a");
+                    var ulist = document.getElementById("myMenu");
+                    var newItem = document.createElement("li");
+
+                    a.textContent = data.categories[indexi].name;
+                    a.setAttribute('href', "/c/" + data.categories[indexi].id);
+                    newItem.appendChild(a);
+                    ulist.appendChild(newItem);
+                }
             }
         }
     }
