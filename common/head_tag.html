@@ -21,7 +21,7 @@ function(err, data) {
     } else {
         var subcats = [];
         for (let index = 0; index < data.categories.length; ++index) {
-            if(data.categories[index].parent_category_id === undefined && data.categories[index].id !== 1) {
+            if(data.categories[index].parent_category_id === undefined && data.categories[index].id !== 1 && data.categories[index].id !== 2 && data.categories[index].id !== 3) {
                 var a = document.createElement("a");
                 var ulist = document.getElementById("myMenu");
                 var newItem = document.createElement("li");
@@ -35,8 +35,8 @@ function(err, data) {
 
                 if(subcats.length) {
                     for (let indexi = 0; indexi < subcats.length; ++indexi) {
-                        if(subcats[indexi].id !== 1) {
-                            console.log(subcats[indexi])
+                        if(subcats[indexi].id !== 1 && subcats[indexi].id !== 2 && subcats[indexi].id !== 3) {
+                            console.log(subcats[indexi].id)
                             var a = document.createElement("a");
                             var ulist = document.getElementById("myMenu");
                             var newItem = document.createElement("li");
