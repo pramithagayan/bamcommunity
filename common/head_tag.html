@@ -55,7 +55,14 @@ function(err, data) {
 jQuery(document).ready(function(){
     jQuery('#menuBtn').on('click', function(e) {
         e.preventDefault();
-        alert('test');
+        var check=jQuery(this).text().trim();
+        if(check=="Close"){
+            jQuery(this).text("Open");
+            $("#myMenu").addClass("d-none");
+        }else{
+            jQuery(this).text("Close");
+            $("#myMenu").removeClass("d-none");
+        }
     });
 });
 </script>
