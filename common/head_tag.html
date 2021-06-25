@@ -52,12 +52,7 @@ function(err, data) {
     }
 });
 
-function openClose() {
-    var menuBtn = document.getElementById("menuBtn");
-    if(menuBtn.classList.contains('active')) {
-        element.classList.add("active");
-    } else {
-        element.classList.add("active");
-    }
-}
+jQuery('#menuBtn').on('click', function() {
+    alert('test');
+});
 </script>
