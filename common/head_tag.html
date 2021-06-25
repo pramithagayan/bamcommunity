@@ -22,7 +22,7 @@ function(err, data) {
         console.log(data.categories)
         for (let index = 0; index < data.categories.length; ++index) {
             console.log(data.categories[index].parent_category_id);
-            if(data.categories[index].parent_category_id != undefined) {
+            if(data.categories[index].parent_category_id == undefined) {
                 var a = document.createElement("a");
                 var ulist = document.getElementById("myMenu");
                 var newItem = document.createElement("li");
