@@ -353,3 +353,6 @@ li.subCat {
 li.other-trending-stocks, li.bam-forecasting-services {
   width: 100%!important;
 }
+.wrap {
+  max-width: calc(100% - 20px);
+}
