@@ -1,18 +1,25 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
-    (function(){
-        function rvOffices() {
-            $.ajax({
-                url: 'https://community.baminvestor.com/categories.json',
-                type: 'GET',
-                dataType: 'text',
-                success: function(data) {
-                    var json_result = JSON.parse(data);
-                    //console.log(json_result); // The whole JSON
-                    console.log(json_result);
-                }
-            });
-        }
-        rvOffices();
-    });
+var getJSON = function(url, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = 'json';
+    xhr.onload = function() {
+      var status = xhr.status;
+      if (status === 200) {
+        callback(null, xhr.response);
+      } else {
+        callback(status, xhr.response);
+      }
+    };
+    xhr.send();
+};
+
+getJSON('https://community.baminvestor.com/categories.json',
+function(err, data) {
+  if (err !== null) {
+    alert('Something went wrong: ' + err);
+  } else {
+    alert('Your query count: ' + data.query.count);
+  }
+});
 </script>
