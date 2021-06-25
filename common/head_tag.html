@@ -20,10 +20,7 @@ function(err, data) {
         alert('Something went wrong: ' + err);
     } else {
         var subcats = [];
-        console.log(data.categories)
         for (let index = 0; index < data.categories.length; ++index) {
-            
-            
             if(data.categories[index].parent_category_id === undefined && data.categories[index].id !== 1) {
                 var a = document.createElement("a");
                 var ulist = document.getElementById("myMenu");
@@ -38,14 +35,16 @@ function(err, data) {
 
                 if(subcats.length) {
                     for (let indexi = 0; indexi < subcats.length; ++indexi) {
-                        var a = document.createElement("a");
-                        var ulist = document.getElementById("myMenu");
-                        var newItem = document.createElement("li");
+                        if(data.categories[index].parent_category_id !== undefined && data.categories[index].id !== 1) {
+                            var a = document.createElement("a");
+                            var ulist = document.getElementById("myMenu");
+                            var newItem = document.createElement("li");
 
-                        a.textContent = data.categories[indexi].name;
-                        a.setAttribute('href', "/c/" + data.categories[indexi].id);
-                        newItem.appendChild(a);
-                        ulist.appendChild(newItem);
+                            a.textContent = data.categories[indexi].name;
+                            a.setAttribute('href', "/c/" + data.categories[indexi].id);
+                            newItem.appendChild(a);
+                            ulist.appendChild(newItem);
+                        }
                     }
                 }
             }
