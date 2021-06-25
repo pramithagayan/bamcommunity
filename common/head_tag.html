@@ -35,18 +35,7 @@ function(err, data) {
 
                 var subcats = data.categories.filter(item => item.parent_category_id === data.categories[index].parent_category_id);
 
-                if(subcats.length) {
-                    for (let indexi = 0; indexi < subcats.length; ++indexi) {
-                        var a = document.createElement("a");
-                        var ulist = document.getElementById("myMenu");
-                        var newItem = document.createElement("li");
-
-                        a.textContent = data.categories[indexi].name;
-                        a.setAttribute('href', "/c/" + data.categories[indexi].id);
-                        newItem.appendChild(a);
-                        ulist.appendChild(newItem);
-                    }
-                }
+                console.log(subcats)
             }
         }
     }
