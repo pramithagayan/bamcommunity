@@ -21,8 +21,9 @@ function(err, data) {
     } else {
         console.log(data.categories)
         for (let index = 0; index < data.categories.length; ++index) {
-            console.log(data.categories[index].parent_category_id);
-            if(data.categories[index].parent_category_id == undefined) {
+            
+            if(data.categories[index].parent_category_id === undefined) {
+                console.log(data.categories[index].parent_category_id);
                 var a = document.createElement("a");
                 var ulist = document.getElementById("myMenu");
                 var newItem = document.createElement("li");
