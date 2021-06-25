@@ -327,3 +327,23 @@ input[type="color"]:focus, textarea:focus {
 .avatar {
     background-color: #131313;
 }
+ul#myMenu li a {
+  color: #282a36;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+ul#myMenu li {
+  padding: 15px 10px;
+  background: #8be9fd;
+  text-align: center;
+  margin: 1px;
+  width: calc(50% - 22px);
+}
+ul#myMenu {
+  list-style: none;
+  margin: 0 0 30px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
