@@ -38,6 +38,7 @@ function(err, data) {
                         var a = document.createElement("a");
                         var ulist = document.getElementById("myMenu");
                         var newItem = document.createElement("li");
+                        newItem.className = "subCat";
 
                         a.textContent = subcats[indexi].name;
                         a.setAttribute('href', "/c/" + subcats[indexi].id);
