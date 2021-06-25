@@ -328,13 +328,13 @@ input[type="color"]:focus, textarea:focus {
     background-color: #131313;
 }
 ul#myMenu li a {
-  color: #282a36;
+  color: #fff;
   font-weight: 700;
   text-transform: uppercase;
 }
 ul#myMenu li {
   padding: 15px 10px;
-  background: #8be9fd;
+  background: #4E8DFF;
   text-align: center;
   margin: 1px;
   width: calc(50% - 22px);
@@ -348,7 +348,7 @@ ul#myMenu {
   align-content: center;
 }
 li.subCat {
-  background: #ceeff7!important;
+  background: #94BAFF!important;
 }
 li.other-trending-stocks, li.bam-forecasting-services {
   width: 100%!important;
