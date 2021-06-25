@@ -35,7 +35,7 @@ function(err, data) {
 
                 if(subcats.length) {
                     for (let indexi = 0; indexi < subcats.length; ++indexi) {
-                        if(data.categories[index].parent_category_id !== undefined && data.categories[index].id !== 1) {
+                        if(data.categories[index].id !== 1) {
                             var a = document.createElement("a");
                             var ulist = document.getElementById("myMenu");
                             var newItem = document.createElement("li");
