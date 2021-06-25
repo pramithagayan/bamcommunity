@@ -16,19 +16,22 @@ var getJSON = function(url, callback) {
 
 getJSON('https://community.baminvestor.com/site.json',
 function(err, data) {
-  if (err !== null) {
-    alert('Something went wrong: ' + err);
-  } else {
-    for (let index = 0; index < data.categories.length; ++index) {
-        var a = document.createElement("a");
-        var ulist = document.getElementById("myMenu");
-        var newItem = document.createElement("li");
+    if (err !== null) {
+        alert('Something went wrong: ' + err);
+    } else {
+        console.log(data.categories)
+        for (let index = 0; index < data.categories.length; ++index) {
+            if(data.categories[index].has_children == false) {
+                var a = document.createElement("a");
+                var ulist = document.getElementById("myMenu");
+                var newItem = document.createElement("li");
 
-        a.textContent = data.categories[index].name;
-        a.setAttribute('href', "/c/" + data.categories[index].id);
-        newItem.appendChild(a);
-        ulist.appendChild(newItem);
+                a.textContent = data.categories[index].name;
+                a.setAttribute('href', "/c/" + data.categories[index].id);
+                newItem.appendChild(a);
+                ulist.appendChild(newItem);
+            }
+        }
     }
-  }
 });
 </script>
