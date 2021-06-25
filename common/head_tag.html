@@ -62,13 +62,13 @@ jQuery(document).ready(function(){
         var check=jQuery(this).text().trim();
         if(check=="Close Categories"){
             jQuery(this).text("Open Categories");
-            $("#myMenu").addClass("d-none");
+            $("#myMenu").slideToggle();
         }else{
             jQuery(this).text("Close Categories");
-            $("#myMenu").removeClass("d-none");
+            $("#myMenu").slideToggle();
         }
     });
 
-    setTimeout(function(){ jQuery('#menuBtn').trigger('click'); }, 4000);
+    setTimeout(function(){ jQuery('#menuBtn').trigger('click'); }, 3000);
 });
 </script>
