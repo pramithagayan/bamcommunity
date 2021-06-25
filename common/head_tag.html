@@ -49,6 +49,12 @@ function(err, data) {
                 }
             }
         }
+
+        jQuery('.subCat').on('click', function(e) {
+            e.preventDefault();
+            console.log('a')
+            jQuery('#menuBtn').trigger('click');
+        });
     }
 });
 
@@ -63,13 +69,6 @@ jQuery(document).ready(function(){
             jQuery(this).text("Close Categories");
             $("#myMenu").removeClass("d-none");
         }
-    });
-});
-jQuery(window).load(function(){
-    jQuery('.subCat').on('click', function(e) {
-        e.preventDefault();
-        console.log('a')
-        jQuery('#menuBtn').trigger('click');
     });
 });
 </script>
