@@ -399,3 +399,22 @@ a#menuBtn {
 .topic-body {
   width: 100%;
 }
+#topic-footer-buttons {
+  max-width: 100%;
+  margin: 0;
+  padding: 10px;
+  background: #1f212b;
+}
+#topic-footer-buttons .pinned-button, #topic-footer-buttons .topic-notifications-button {
+  margin: 0.5em 0 0;
+}
+section.post-menu-area {
+  position: relative;
+  padding-left: 11px;
+  background: #1f212b;
+  margin: 0;
+  padding: 11px;
+}
+.post-actions {
+  margin-bottom: 0;
+}
