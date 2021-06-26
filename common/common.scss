@@ -431,3 +431,8 @@ html {
 .topic-above-footer-buttons-outlet.presence {
   min-height: 0;
 }
+@media screen and (max-width: 924px) {
+  #topic-footer-buttons .topic-footer-main-buttons {
+      margin-top: 0;
+  }
+}
