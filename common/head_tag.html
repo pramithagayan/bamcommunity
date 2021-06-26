@@ -68,7 +68,8 @@ jQuery(document).ready(function(){
             $("#myMenu").slideToggle();
         }
     });
-
-    setTimeout(function(){ jQuery('#menuBtn').trigger('click'); }, 2000);
+    if(!jQuery('body').hasClass('category')) {
+        setTimeout(function(){ jQuery('#menuBtn').trigger('click'); }, 2000);
+    }
 });
 </script>
