@@ -396,6 +396,9 @@ a#menuBtn {
 .topic-body {
   width: calc(100% - 47px);
 }
+.mobile-view .topic-body {
+  width: 100%;
+}
 #topic-footer-buttons {
   max-width: 100%;
   margin: -10px;
