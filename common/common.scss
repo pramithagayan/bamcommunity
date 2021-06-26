@@ -398,8 +398,8 @@ a#menuBtn {
 }
 #topic-footer-buttons {
   max-width: 100%;
-  margin: 0;
-  padding: 10px;
+  margin: -10px;
+  padding: 15px;
   background: #1f212b;
 }
 #topic-footer-buttons .pinned-button, #topic-footer-buttons .topic-notifications-button {
@@ -408,7 +408,6 @@ a#menuBtn {
 section.post-menu-area {
   position: relative;
   padding-left: 11px;
-  background: #1f212b;
   margin: 0;
   padding: 11px;
 }
