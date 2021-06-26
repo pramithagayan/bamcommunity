@@ -363,7 +363,7 @@ a#menuBtn {
   padding: 20px;
   display: block;
   background: #ff9800;
-  margin: 0 -20px 10px;
+  margin: 0 -10px 10px;
   text-align: center;
   color: #fff;
   font-weight: 700;
@@ -394,7 +394,7 @@ a#menuBtn {
   background: #fff;
 }
 .topic-body {
-  width: calc(100% - 47px);
+  width: 100%;
 }
 #topic-footer-buttons {
   max-width: 100%;
@@ -429,6 +429,14 @@ html {
 }
 #topic-footer-buttons .pinned-button:not(.is-hidden)+.topic-notifications-button {
   margin-top: 5px;
+}
+.topic-map {
+  background: #1f212b;
+  border: 1px solid #1f212b;
+  border-top: none;
+}
+.container.posts .timeline-container {
+  padding: 20px 0;
 }
 @media screen and (max-width: 924px) {
   #topic-footer-buttons .topic-footer-main-buttons {
