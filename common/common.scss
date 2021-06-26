@@ -427,6 +427,9 @@ html {
 .topic-above-footer-buttons-outlet.presence {
   min-height: 0;
 }
+#topic-footer-buttons .pinned-button:not(.is-hidden)+.topic-notifications-button {
+  margin-top: 5px;
+}
 @media screen and (max-width: 924px) {
   #topic-footer-buttons .topic-footer-main-buttons {
       margin-top: 0;
