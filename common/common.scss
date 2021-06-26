@@ -445,6 +445,9 @@ html {
   float: left;
   padding: 10px 10px 7px;
 }
+.container.posts {
+  grid-template-columns: auto 120px;
+}
 @media screen and (max-width: 924px) {
   #topic-footer-buttons .topic-footer-main-buttons {
       margin-top: 0;
