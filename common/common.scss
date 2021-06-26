@@ -394,7 +394,7 @@ a#menuBtn {
   background: #fff;
 }
 .topic-body {
-  width: 100%;
+  width: calc(100% - 47px);
 }
 #topic-footer-buttons {
   max-width: 100%;
