@@ -444,6 +444,10 @@ html {
 .d-header #site-logo {
   max-height: 3.677em;
 }
+.topic-map .map li {
+  float: left;
+  padding: 10px 10px 7px;
+}
 @media screen and (max-width: 924px) {
   #topic-footer-buttons .topic-footer-main-buttons {
       margin-top: 0;
