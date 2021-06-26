@@ -397,7 +397,7 @@ a#menuBtn {
   background: #fff;
 }
 .topic-body {
-  width: 100%;
+  width: calc(100% - 47px);
 }
 #topic-footer-buttons {
   max-width: 100%;
@@ -421,7 +421,7 @@ section.post-menu-area {
 #topic-title {
   z-index: 1;
   margin-bottom: 1em;
-  margin: -10px;
+  margin: -10px -10px 0;
   padding: 15px;
   background: #1f212b;
 }
